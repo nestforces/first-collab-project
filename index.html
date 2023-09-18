@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h2>JavaScript Calculator</h2>
+
+    <button onclick="calculatorBox()">Try it</button>
+
+   
+    </center>
+</body>
+</html>
+
+
+
+
+<script>
+    function calculatorBox() {
+      let numberMenu = prompt("Pilih Menu:\n 1. Penjumlahan\n 2. Pengurangan\n 3. Pembagian\n 4. Perkalian\n 5. Pangkat 2\n 6. Akar Pangkat 2\n 7. Akar Pangkat 3");
+    
+      if (numberMenu == '') {
+        alert(`U not choose`)
+      }
+      else if (numberMenu == 1) {
+          penjumlahan();
+          calculatorBox();
+      } else if (numberMenu == 2) {
+          pengurangan();
+          calculatorBox();
+      } else if (numberMenu == 3) {
+          pembagian();
+          calculatorBox();
+      } else if (numberMenu == 4) {
+          perkalian();
+          calculatorBox();
+      } else if (numberMenu == 5) {
+          pangkatDua();
+          calculatorBox();
+      } else if (numberMenu == 6) {
+          akarPangkatDua();
+          calculatorBox();
+      } else if (numberMenu == 7) {
+          akarPangkatTiga();
+          calculatorBox();
+      }
+      
+    
+      function penjumlahan() {
+        // asrar
+      }
+    
+      function pengurangan() {
+          // asrar
+         
+        }
+    
+        function pembagian() {
+           // sando
+        }
+    
+        
+        function perkalian() {
+           // sando
+        }
+    
+        function pangkatDua() {
+           // sando
+        }
+    
+        function akarPangkatDua() {
+           // asrar
+        }
+
+        function akarPangkatTiga() {
+            let number1 = prompt("Pilih Angka:");
+            let result = Math.cbrt(number1);
+            alert(`User choose number ∛${number1} = ${result}`);
+        }
+    }
+    </script>
